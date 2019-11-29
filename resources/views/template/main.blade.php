@@ -16,8 +16,16 @@
 </head>
 
 <body>
-    @yield('container')
 
+    <div class="container">
+
+        @include('template/navbar')
+
+        <div class="mt-3">
+            @yield('container')
+        </div>
+
+    </div>
 
     <div id="footer">
         <p>&copy; 2019 | sekolahku app</p>
@@ -28,7 +36,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </div>
+    </script>
     <script src="{{ asset('bootstrap-4.3.1/js/bootstrap.min.js') }}">
     </script>
 </body>

@@ -12,11 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('homepage.index');
+    // ini adalah variabel halaman yang akan dikondisikan ketika halaman diklik
+    $halaman = 'homepage';
+    return view('homepage.index', compact('halaman'));
 });
 
 Route::get('/about', function () {
-    return view('about.index');
+    // ini adalah variabel halaman yang akan dikondisikan ketika halaman diklik
+    $halaman = 'about';
+    return view('about.index', compact('halaman'));
 });
 
 Route::get('/siswa', function () {
@@ -26,5 +30,7 @@ Route::get('/siswa', function () {
         'Brendan Eich',
         'John Resig'
     ];
-    return view('siswa.index', compact('siswa'));
+    // ini adalah variabel halaman yang akan dikondisikan ketika halaman diklik
+    $halaman = 'siswa';
+    return view('siswa.index', compact('halaman', 'siswa'));
 });
