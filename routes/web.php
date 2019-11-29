@@ -18,3 +18,13 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about.index');
 });
+
+Route::get('/siswa', function () {
+    $siswa = [
+        'Rasmus Lerdof',
+        'Taylor Otwell',
+        'Brendan Eich',
+        'John Resig'
+    ];
+    return view('siswa.index', compact('siswa'));
+});
