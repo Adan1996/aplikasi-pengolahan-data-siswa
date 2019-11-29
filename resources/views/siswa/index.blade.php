@@ -1,11 +1,16 @@
+@extends('template/main')
+
+@section('title', 'Daftar Siswa')
+
+@section('container')
+
 <div class="siswa">
     <h2>Siswa</h2>
 
-    <?php if(!empty($siswa)) : ?>
     <ul>
-        <?php foreach($siswa as $s) : ?>
-        <li><?= $s; ?></li>
-        <?php endforeach; ?>
+        @foreach ($siswa as $s)
+        <li>{{ $s }}</li>
+        @endforeach
     </ul>
-    <?php endif; ?>
 </div>
+@endsection

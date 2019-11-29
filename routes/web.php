@@ -26,5 +26,5 @@ Route::get('/siswa', function () {
         'Brendan Eich',
         'John Resig'
     ];
-    return view('siswa.index', ['siswa' => $siswa]);
+    return view('siswa.index', compact('siswa'));
 });
