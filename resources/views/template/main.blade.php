@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('bootstrap-4.3.1/css/bootstrap.min.css') }}">
 
+    {{-- My CSS --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
     <title>@yield('title')</title>
 </head>
 

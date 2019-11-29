@@ -7,6 +7,8 @@
 <div class="siswa">
     <h2>Siswa</h2>
 
+    <hr>
+
     <ul>
         @foreach ($siswa as $s)
         <li>{{ $s }}</li>
