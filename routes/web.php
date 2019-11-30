@@ -11,26 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    // ini adalah variabel halaman yang akan dikondisikan ketika halaman diklik
-    $halaman = 'homepage';
-    return view('homepage.index', compact('halaman'));
-});
+Route::get('/', 'HomepageController@index');
 
-Route::get('/about', function () {
-    // ini adalah variabel halaman yang akan dikondisikan ketika halaman diklik
-    $halaman = 'about';
-    return view('about.index', compact('halaman'));
-});
+Route::get('/about', 'AboutController@index');
 
-Route::get('/siswa', function () {
-    $siswa = [
-        'Rasmus Lerdof',
-        'Taylor Otwell',
-        'Brendan Eich',
-        'John Resig'
-    ];
-    // ini adalah variabel halaman yang akan dikondisikan ketika halaman diklik
-    $halaman = 'siswa';
-    return view('siswa.index', compact('halaman', 'siswa'));
-});
+Route::get('/siswa', 'SiswaController@index');
