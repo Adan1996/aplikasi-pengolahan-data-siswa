@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'HomepageController@index');
+Route::get('about', 'AboutController@index');
 
-Route::get('/about', 'AboutController@index');
-
-Route::get('/siswa', 'SiswaController@index');
+// route halaman siswa
+Route::get('siswa', 'SiswaController@index');
+Route::get('siswa/create', 'SiswaController@create');
+Route::post('siswa', 'SiswaController@store');
