@@ -16,6 +16,6 @@ Route::get('about', 'AboutController@index');
 
 // route halaman siswa
 Route::get('siswa', 'SiswaController@index');
-Route::get('siswa/{siswa}', 'SiswaController@show');
 Route::get('siswa/create', 'SiswaController@create');
+Route::get('siswa/{siswa}', 'SiswaController@show');
 Route::post('siswa', 'SiswaController@store');

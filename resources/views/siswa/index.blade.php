@@ -9,7 +9,7 @@
 
     <hr>
 
-    <table class="table">
+    <table id="data" class="table">
         <thead class="table-dark">
             <tr>
                 <th scope="col">No</th>
@@ -35,8 +35,13 @@
             @endforeach
         </tbody>
     </table>
-    <div class="pull-left">
+    {{-- <div class="pull-left">
         <strong>Jumlah Siswa: {{ $jumlah_siswa }}</strong>
+</div> --}}
+<div class="bottom-nav mt-3">
+    <div>
+        <a href="siswa/create" class="btn btn-primary">Tambah Siswa</a>
     </div>
+</div>
 </div>
 @endsection
