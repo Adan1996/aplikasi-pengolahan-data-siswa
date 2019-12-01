@@ -9,7 +9,7 @@
 
     <hr>
 
-    <table class="table">
+    <table id="data" class="table">
         <thead class="table-dark">
             <tr>
                 <th scope="col">No</th>
