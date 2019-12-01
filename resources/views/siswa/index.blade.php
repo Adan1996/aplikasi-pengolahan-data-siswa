@@ -5,7 +5,7 @@
 @section('container')
 
 <div class="siswa">
-    <h2>Siswa</h2>
+    <h2>Daftar Siswa</h2>
 
     <hr>
 
