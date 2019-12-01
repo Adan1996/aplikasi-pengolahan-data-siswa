@@ -20,14 +20,10 @@
 
 <body>
 
-    <div class="container">
+    @include('template/navbar')
 
-        @include('template/navbar')
-
-        <div class="mt-3">
-            @yield('container')
-        </div>
-
+    <div class="container mt-3">
+        @yield('container')
     </div>
 
     <div id="footer">
