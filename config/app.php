@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Application Service Provider
+        App\Providers\SekolahkuAppServiceProvider::class,
     ],
 
     /*

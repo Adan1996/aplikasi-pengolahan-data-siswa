@@ -20,17 +20,6 @@
 
 <body>
 
-    <?php
-    $halaman = '';
-    if (Request::segment(1) == 'siswa') {
-        $halaman = 'siswa';
-    }
-
-    if (Request::segment(1) == 'about') {
-        $halaman = 'about';
-    }
-    ?>
-
     @include('template/navbar')
 
     <div class="container mt-3">
