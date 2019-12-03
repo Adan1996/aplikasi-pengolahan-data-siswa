@@ -40,13 +40,17 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        $siswa = new Siswa;
-        $siswa->nisn = $request->nisn;
-        $siswa->nama_siswa = $request->nama_siswa;
-        $siswa->tanggal_lahir = $request->tanggal_lahir;
-        $siswa->jenis_kelamin = $request->jenis_kelamin;
-        $siswa->save();
+        // Menggunakan instance
+        // $siswa = new Siswa;
+        // $siswa->nisn = $request->nisn;
+        // $siswa->nama_siswa = $request->nama_siswa;
+        // $siswa->tanggal_lahir = $request->tanggal_lahir;
+        // $siswa->jenis_kelamin = $request->jenis_kelamin;
+        // $siswa->save();
 
+        // Menggunakan method static
+        $input = $request->all();
+        Siswa::create($input);
         return redirect('siswa');
     }
 
