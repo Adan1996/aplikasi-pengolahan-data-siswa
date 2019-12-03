@@ -15,10 +15,9 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        $halaman = 'siswa';
         $siswa = Siswa::all()->sortBy('nama_siswa');
         $jumlah_siswa = $siswa->count();
-        return view('siswa.index', compact('halaman', 'siswa', 'jumlah_siswa'));
+        return view('siswa.index', compact('siswa', 'jumlah_siswa'));
     }
 
     /**
@@ -28,8 +27,7 @@ class SiswaController extends Controller
      */
     public function create()
     {
-        $halaman = 'siswa';
-        return view('siswa.create', compact('halaman'));
+        return view('siswa.create');
     }
 
     /**
@@ -62,9 +60,8 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        $halaman = 'siswa';
         $siswa = Siswa::findOrFail($id);
-        return view('siswa.show', compact('halaman', 'siswa'));
+        return view('siswa.show', compact('siswa'));
     }
 
     /**
