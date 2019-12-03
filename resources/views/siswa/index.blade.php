@@ -5,7 +5,16 @@
 @section('container')
 
 <div class="siswa">
-    <h2>Daftar Siswa</h2>
+    <div class="row">
+        <div class="col">
+            <h2>Daftar Siswa</h2>
+        </div>
+        <div class="col-lg-2">
+            <div>
+                <a href="siswa/create" class="btn btn-primary">Tambah Siswa</a>
+            </div>
+        </div>
+    </div>
 
     <hr>
 
@@ -38,10 +47,5 @@
     {{-- <div class="pull-left">
         <strong>Jumlah Siswa: {{ $jumlah_siswa }}</strong>
 </div> --}}
-<div class="bottom-nav mt-3">
-    <div>
-        <a href="siswa/create" class="btn btn-primary">Tambah Siswa</a>
-    </div>
-</div>
 </div>
 @endsection
