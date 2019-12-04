@@ -40,6 +40,11 @@
                 <td>
                     <a href="siswa/{{ $s->id }}" class="btn btn-primary">detail</a>
                     <a href="siswa/{{ $s->id }}/edit" class="btn btn-success">edit</a>
+                    <form action="siswa/{{ $s->id }}" method="post" class="d-inline">
+                        @method('delete')
+                        @csrf
+                        <button type="submit" class="btn btn-danger">delete</button>
+                    </form>
                 </td>
             </tr>
             @endforeach

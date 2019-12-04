@@ -103,6 +103,8 @@ class SiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $siswa = Siswa::findOrFail($id);
+        $siswa->delete();
+        return redirect('siswa');
     }
 }
