@@ -39,6 +39,7 @@
                 <td>{{ $s->jenis_kelamin }}</td>
                 <td>
                     <a href="siswa/{{ $s->id }}" class="btn btn-primary">detail</a>
+                    <a href="siswa/{{ $s->id }}/edit" class="btn btn-success">edit</a>
                 </td>
             </tr>
             @endforeach

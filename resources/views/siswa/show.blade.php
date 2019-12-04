@@ -14,6 +14,7 @@
             <h5 class="card-title">{{ $siswa->nama_siswa }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ $siswa->nisn }}</h6>
             <p class="card-text">{{ $siswa->tanggal_lahir }}</p>
+            <p class="card-text">{{ $siswa->jenis_kelamin }}</p>
             <a href="/siswa" class="card-link">kembali</a>
         </div>
     </div>

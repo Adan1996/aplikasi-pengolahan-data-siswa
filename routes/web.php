@@ -19,3 +19,5 @@ Route::get('siswa', 'SiswaController@index');
 Route::get('siswa/create', 'SiswaController@create');
 Route::get('siswa/{siswa}', 'SiswaController@show');
 Route::post('siswa', 'SiswaController@store');
+Route::get('siswa/{siswa}/edit', 'SiswaController@edit');
+Route::patch('siswa/{siswa}', 'SiswaController@update');
