@@ -43,7 +43,8 @@
                     <form action="siswa/{{ $s->id }}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
-                        <button type="submit" class="btn btn-danger">delete</button>
+                        <button type="submit" class="btn btn-danger"
+                            onclick="return confirm('yakin ?');">delete</button>
                     </form>
                 </td>
             </tr>
